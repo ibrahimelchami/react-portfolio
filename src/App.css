@@ -1,3 +1,52 @@
+body {
+  position: absolute;
+  right: 0;
+
+  background: #fffdf9;
+  width: 75%;
+}
+
+.heading {
+  font-family: 'Source Serif Pro Black';
+  text-align: center;
+  font-size: 88px;
+  line-height: 96px;
+  color: #141c24;
+
+  margin: 0;
+}
+
+.sub-heading {
+  font-family: 'Open Sans';
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 64px;
+  color: #283038;
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 100%;
+    padding: 200px 0;
+
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
 .App {
   text-align: center;
 }
