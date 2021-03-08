@@ -2,8 +2,14 @@ import React from 'react';
 
 import Data from '../Data';
 
-import { NavCard } from '../components/ComponentLibrary';
-import { CardContainer, Content, Heading, SubHeading } from './indexElements';
+import {
+  Content,
+  NavCard,
+  PgH,
+  PgSH,
+  CContainer,
+  HContainer,
+} from '../components/ComponentLibrary';
 import risepeopleimg from '../Data/Assets/sample.png';
 
 const Home = () => {
@@ -17,18 +23,16 @@ const Home = () => {
   //   };
 
   return (
-    <Content>
-      <Heading className="heading">
-        Hey there &#x1F44B;<br></br>I'm Ibrahim
-      </Heading>
-      <SubHeading className="sub-heading">
-        &#x270F;&#xFE0F; Product Designer
-      </SubHeading>
-      <SubHeading className="sub-heading">
-        &#x1F468;&#x1F3FB;&#x200D;&#x1F4BB; Hobby Coder
-      </SubHeading>
-      <SubHeading>&#x1F3AE; Gamer</SubHeading>
-      <CardContainer>
+    <Content pagecolor={'#FCF7DE'}>
+      <HContainer>
+        <PgH>
+          Hey there &#x1F44B;<br></br>I'm Ibrahim
+        </PgH>
+        <PgSH>&#x270F;&#xFE0F; Product Designer</PgSH>
+        <PgSH>&#x1F468;&#x1F3FB;&#x200D;&#x1F4BB; Hobby Coder</PgSH>
+        <PgSH>&#x1F3AE; Gamer</PgSH>
+      </HContainer>
+      <CContainer>
         <NavCard
           title={Data.risepeople.title}
           content={Data.risepeople.content}
@@ -36,6 +40,7 @@ const Home = () => {
           label={Data.risepeople.label}
           count={Data.risepeople.count}
           btntxt={'WIP'}
+          link={'/rise-people'}
         ></NavCard>
         <NavCard
           title={Data.theinside.title}
@@ -44,6 +49,7 @@ const Home = () => {
           label={Data.theinside.label}
           count={Data.theinside.count}
           btntxt={'Check it out'}
+          link={'/the-inside'}
         ></NavCard>
         <NavCard
           title={Data.vanmates.title}
@@ -52,8 +58,9 @@ const Home = () => {
           label={Data.vanmates.label}
           count={Data.vanmates.count}
           btntxt={'Check it out'}
+          link={'/vanmates'}
         ></NavCard>
-      </CardContainer>
+      </CContainer>
     </Content>
   );
 };

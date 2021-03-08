@@ -7,10 +7,12 @@ import {
   Label,
   Count,
   Columnize,
+  ButtonHolder,
 } from './NavCard';
 import PrimaryButton from '../../Button';
+import { NavLink as Link } from 'react-router-dom';
 
-const NavCard = ({ title, content, image, label, count, btntxt }) => {
+const NavCard = ({ title, content, image, label, count, btntxt, link }) => {
   return (
     <Card>
       <Columnize>
@@ -23,9 +25,11 @@ const NavCard = ({ title, content, image, label, count, btntxt }) => {
         <Label>{label}</Label>
         <Title>{title}</Title>
         <Content>{content}</Content>
-        <div style={{ position: 'absolute', bottom: '16px' }}>
-          <PrimaryButton>{btntxt}</PrimaryButton>
-        </div>
+        <ButtonHolder>
+          <Link to={link}>
+            <PrimaryButton>{btntxt}</PrimaryButton>
+          </Link>
+        </ButtonHolder>
         {/* <PrimaryButton>Go to page &gt;</PrimaryButton> */}
       </div>
     </Card>

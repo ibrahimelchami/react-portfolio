@@ -14,6 +14,9 @@ import {
 // import Navbar from './components/Navbar';
 
 import Home from './pages';
+import RisePeople from './pages/projects/risepeople';
+import TheInside from './pages/projects/theinside';
+import Vanmates from './pages/projects/vanmates';
 import PageNotFound from './pages/404';
 import Design from './pages/design';
 
@@ -22,11 +25,11 @@ function App() {
     <HashRouter>
       {/* <NavBar /> */}
       <Switch>
-        {/* <Route path="/">
-          <Redirect to="/me" />
-        </Route> */}
-        <Route path="/me" component={Home} />
-        <Route path="/404" component={PageNotFound} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rise-people" component={RisePeople} />
+        <Route exact path="/the-inside" component={TheInside} />
+        <Route exact path="/vanmates" component={Vanmates} />
+        <Route exact path="/404" component={PageNotFound} />
         <Redirect to="/404" />
       </Switch>
     </HashRouter>

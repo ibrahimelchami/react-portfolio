@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   display: flex;
-  margin-bottom: 48px;
+  justify-content: center;
+  margin-top: 48px;
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -27,6 +28,7 @@ export const Content = styled.p`
   font-size: 20px;
   line-height: 28px;
   margin: 0 0 24px 0;
+  width: 400px;
 `;
 
 export const Columnize = styled.div`
@@ -46,10 +48,12 @@ export const Count = styled.p`
 
 export const ImageContainer = styled.div`
   width: 30vw;
+  max-width: 400px;
   padding: 0 24px 0 16px;
 
   @media screen and (max-width: 600px) {
     width: 100%;
+    max-width: unset;
     padding: 0 0 16px 0;
   }
 `;
@@ -59,4 +63,13 @@ export const Image = styled.img`
   height: 210px;
   object-fit: cover;
   border-radius: 16px;
+`;
+
+export const ButtonHolder = styled.div`
+  position: 'absolute';
+  bottom: '16px';
+
+  @media screen and (max-width: 600px) {
+    position: 'relative';
+  }
 `;
