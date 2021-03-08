@@ -1,6 +1,6 @@
 import React from 'react';
 import { Background, Body } from './designElements.js';
-import { NavCard, NavBar } from '../components/ComponentLibrary';
+import { NavCard } from '../components/ComponentLibrary';
 import Data from '../Data';
 
 const Design = () => {

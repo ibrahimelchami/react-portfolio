@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/Navbar';
+// import NavBar from './components/Navbar';
 
 import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
   Redirect,
 } from 'react-router-dom';
 
@@ -16,7 +15,6 @@ import {
 import Home from './pages';
 import PageNotFound from './pages/404';
 import Design from './pages/design';
-import TheInside from './pages/theinside';
 
 function App() {
   return (
