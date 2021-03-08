@@ -7,6 +7,7 @@ import {
   Route,
   Switch,
   Redirect,
+  HashRouter,
 } from 'react-router-dom';
 
 // import Home from './pages'
@@ -18,28 +19,17 @@ import Design from './pages/design';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       {/* <NavBar /> */}
       <Switch>
-        <Route exact path={`${process.env.PUBLIC_URL}/`}>
-          <Redirect to={`${process.env.PUBLIC_URL}/me`} />
-        </Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/me`} component={Home} />
-        <Route
-          exact
-          path={`${process.env.PUBLIC_URL}/404`}
-          component={PageNotFound}
-        />
-        <Route
-          exact
-          path={`${process.env.PUBLIC_URL}/design`}
-          component={Design}
-        />
-        <Redirect to={`${process.env.PUBLIC_URL}/404`} />
-
-        {/* <Route component={TheInside} /> */}
+        {/* <Route path="/">
+          <Redirect to="/me" />
+        </Route> */}
+        <Route path="/me" component={Home} />
+        <Route path="/404" component={PageNotFound} />
+        <Redirect to="/404" />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
