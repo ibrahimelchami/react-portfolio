@@ -4,27 +4,18 @@ import { Nav, NavBtn, NavLink } from './NavbarElements';
 const Navbar = () => {
   return (
     <Nav>
-      <div style={{ height: '100%' }}></div>
-      {/* <NavBtn> */}
-      <NavLink to="/" activeStyle>
+      <NavLink to="/me" activeStyle>
         Me
       </NavLink>
-      {/* </NavBtn> */}
-      {/* <NavBtn> */}
-      <NavLink to="/Design" activeStyle>
+      <NavLink to="/design" activeStyle>
         Design
       </NavLink>
-      {/* </NavBtn> */}
-      {/* <NavBtn> */}
-      <NavLink to="/Coding" activeStyle>
+      <NavLink to="/coding" activeStyle>
         Coding
       </NavLink>
-      {/* </NavBtn> */}
-      {/* <NavBtn> */}
-      <NavLink to="/Writing" activeStyle>
+      <NavLink to="/writing" activeStyle>
         Writing
       </NavLink>
-      {/* </NavBtn> */}
     </Nav>
   );
 };

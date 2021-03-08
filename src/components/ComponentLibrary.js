@@ -1,5 +1,5 @@
-import CardHome from './Card/CardHome';
+import NavCard from './Card/NavCard';
 import NavBar from './Navbar';
 import PrimaryButton from './Button';
 
-export { CardHome, NavBar, PrimaryButton };
+export { NavCard, NavBar, PrimaryButton };

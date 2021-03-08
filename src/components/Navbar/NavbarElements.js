@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   height: 100%;
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,19 +30,24 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   display: flex;
+  justify-content: flex-end;
   text-decoration: none;
   padding: 15px 0;
   cursor: pointer;
   color: #222;
+  font-family: 'Source Serif Pro';
+  font-size: 20px;
 
   &:hover {
-    background-color: #222;
-    color: white;
+    font-family: 'Source Serif Pro Black';
+    font-weight: 700;
+    color: brown;
   }
 
   &.active {
-    background-color: #222;
-    color: white;
+    font-family: 'Source Serif Pro Black';
+    font-weight: 700;
+    color: brown;
   }
 
   @media screen and (max-width: 720px) {
@@ -53,5 +58,10 @@ export const NavLink = styled(Link)`
     padding: 0;
     height: 100%;
     width: 100%;
+
+    &.active {
+      background-color: #222;
+      color: white;
+    }
   }
 `;

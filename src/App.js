@@ -15,17 +15,22 @@ import {
 
 import Home from './pages';
 import PageNotFound from './pages/404';
+import Design from './pages/design';
 import TheInside from './pages/theinside';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <Redirect to="/me" />
+        </Route>
+        <Route exact path="/me" component={Home} />
         <Route exact path="/404" component={PageNotFound} />
-        <Route exact path="/the-inside" component={TheInside} />
+        <Route exact path="/design" component={Design} />
         <Redirect to="/404" />
+
         {/* <Route component={TheInside} /> */}
       </Switch>
     </Router>

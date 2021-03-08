@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Data from '../Data';
 import { Link } from 'react-router-dom';
 
-import { CardHome, NavBar } from '../components/ComponentLibrary';
+import { NavCard } from '../components/ComponentLibrary';
+import { CardContainer, Content, Heading, SubHeading } from './indexElements';
+import risepeopleimg from '../Data/Assets/sample.png';
 
 const Home = () => {
   //   const BasicEffect = () => {
@@ -16,23 +18,44 @@ const Home = () => {
   //   };
 
   return (
-    <div>
-      <h1 className="heading">
+    <Content>
+      <Heading className="heading">
         Hey there &#x1F44B;<br></br>I'm Ibrahim
-      </h1>
-      <h2 className="sub-heading">&#x270F;&#xFE0F; Product Designer</h2>
-      <h2 className="sub-heading">
+      </Heading>
+      <SubHeading className="sub-heading">
+        &#x270F;&#xFE0F; Product Designer
+      </SubHeading>
+      <SubHeading className="sub-heading">
         &#x1F468;&#x1F3FB;&#x200D;&#x1F4BB; Hobby Coder
-      </h2>
-      <h2 className="sub-heading">&#x1F3AE; Gamer</h2>
-      <div style={{ marginTop: '300px' }}>
-        <CardHome
+      </SubHeading>
+      <SubHeading>&#x1F3AE; Gamer</SubHeading>
+      <CardContainer>
+        <NavCard
+          title={Data.risepeople.title}
+          content={Data.risepeople.content}
+          image={risepeopleimg}
+          label={Data.risepeople.label}
+          count={Data.risepeople.count}
+          btntxt={'WIP'}
+        ></NavCard>
+        <NavCard
           title={Data.theinside.title}
           content={Data.theinside.content}
-          image={Data.theinside.image}
-        ></CardHome>
-      </div>
-    </div>
+          image={risepeopleimg}
+          label={Data.theinside.label}
+          count={Data.theinside.count}
+          btntxt={'Check it out'}
+        ></NavCard>
+        <NavCard
+          title={Data.vanmates.title}
+          content={Data.vanmates.content}
+          image={risepeopleimg}
+          label={Data.vanmates.label}
+          count={Data.vanmates.count}
+          btntxt={'Check it out'}
+        ></NavCard>
+      </CardContainer>
+    </Content>
   );
 };
 
