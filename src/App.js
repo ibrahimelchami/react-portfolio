@@ -25,9 +25,9 @@ function App() {
           <Redirect to="/me" />
         </Route>
         <Route exact path="/me" component={Home} />
-        <Route exact path="/404" component={PageNotFound} />
+        {/* <Route exact path="/404" component={PageNotFound} /> */}
         <Route exact path="/design" component={Design} />
-        <Redirect to="/me" />
+        {/* <Redirect to="/404" /> */}
 
         {/* <Route component={TheInside} /> */}
       </Switch>
