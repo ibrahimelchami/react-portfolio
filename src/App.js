@@ -21,13 +21,21 @@ function App() {
     <Router>
       {/* <NavBar /> */}
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/me" />
+        <Route exact path={`${process.env.PUBLIC_URL}/`}>
+          <Redirect to={`${process.env.PUBLIC_URL}/me`} />
         </Route>
-        <Route exact path="/me" component={Home} />
-        {/* <Route exact path="/404" component={PageNotFound} /> */}
-        <Route exact path="/design" component={Design} />
-        {/* <Redirect to="/404" /> */}
+        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/404`}
+          component={PageNotFound}
+        />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/design`}
+          component={Design}
+        />
+        <Redirect to={`${process.env.PUBLIC_URL}/404`} />
 
         {/* <Route component={TheInside} /> */}
       </Switch>
