@@ -24,7 +24,7 @@ function App() {
         <Route exact path={`${process.env.PUBLIC_URL}/`}>
           <Redirect to={`${process.env.PUBLIC_URL}/me`} />
         </Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+        <Route exact path={`${process.env.PUBLIC_URL}/me`} component={Home} />
         <Route
           exact
           path={`${process.env.PUBLIC_URL}/404`}
