@@ -78,7 +78,7 @@ const Home = () => {
             count={Data.risepeople.count}
             btntxt={'Under Construction'}
             btnstate={0}
-            link={'/rise-people'}
+            link={''}
           ></NavCard>
           <NavCard
             title={Data.vanmates.title}
@@ -88,7 +88,7 @@ const Home = () => {
             count={Data.vanmates.count}
             btntxt={'Under Construction'}
             btnstate={0}
-            link={'/vanmates'}
+            link={''}
           ></NavCard>
         </CContainer>
       </Content>

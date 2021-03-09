@@ -15,9 +15,9 @@ export const Button = styled.button`
   transition: box-shadow 500ms;
 
   &:hover {
-    cursor: pointer;
-    background-color: #223a89;
-    box-shadow: 0 4px 4px 0px rgb(0, 0, 0, 0.15);
+    cursor: ${(props) => props.cursor};
+    background-color: ${(props) => props.hvrcolor};
+    box-shadow: ${(props) => props.hvrshadow};
 
     -webkit-transition: 1000ms linear;
     -ms-transition: 100ms linear;
