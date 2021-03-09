@@ -28,7 +28,7 @@ export const Content = styled.p`
   font-size: 20px;
   line-height: 28px;
   margin: 0 0 24px 0;
-  width: 400px;
+  max-width: 400px;
 `;
 
 export const Columnize = styled.div`
@@ -66,10 +66,6 @@ export const Image = styled.img`
 `;
 
 export const ButtonHolder = styled.div`
-  position: absolute;
-  bottom: 16px;
-
   @media screen and (max-width: 600px) {
-    position: 'relative';
   }
 `;

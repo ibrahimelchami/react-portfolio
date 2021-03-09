@@ -12,9 +12,6 @@ export const Nav = styled(Link)`
   color: ${(props) => props.linkcolor};
   position: absolute;
 
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 70px;
   display: flex;
   flex-direction: column;
@@ -22,10 +19,8 @@ export const Nav = styled(Link)`
   z-index: 10;
   padding: 24px 0 0 32px;
 
-  @media screen and (max-width: 720px) {
-    width: 100%;
-    height: 64px;
-    background-color: #fffdf9;
-    border-bottom: 3px solid #222;
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+    padding: 16px 0 0 24px;
   }
 `;

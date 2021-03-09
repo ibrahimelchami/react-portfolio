@@ -11,8 +11,8 @@ export const SiteHeading = styled.h1`
   margin: 0;
 
   @media screen and (max-width: 600px) {
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 48px;
+    line-height: 56px;
   }
 `;
 
@@ -58,8 +58,9 @@ export const PageSubHeading = styled.h2`
   margin: auto;
 
   @media screen and (max-width: 600px) {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px;
   }
 `;
 

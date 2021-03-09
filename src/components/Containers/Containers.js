@@ -1,21 +1,26 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  padding: 0 0 120px 0;
-
+  width: 60vw;
+  margin: auto;
   @media screen and (max-width: 900px) {
+    width: 80vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 90vw;
   }
 `;
 
 export const ContentContainer = styled.div`
   background: ${(props) => props.backgroundcolor};
   height: 100%;
-  padding: 80px 20%;
-  @media screen and (max-width: 720px) {
-    padding: 0 10%;
+  padding: 80px 20vw;
+  @media screen and (max-width: 900px) {
+    padding: 80px 10vw;
   }
-  @media screen and (max-width: 480px) {
-    padding: 0 4%;
+  @media screen and (max-width: 600px) {
+    padding: 80px 5vw;
   }
 `;
 

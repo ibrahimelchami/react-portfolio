@@ -32,7 +32,7 @@ const NavCard = ({
           <Image src={image}></Image>
         </ImageContainer>
       </Columnize>
-      <div style={{ position: 'relative' }}>
+      <div>
         <Label>{label}</Label>
         <Title>{title}</Title>
         <Content>{content}</Content>
