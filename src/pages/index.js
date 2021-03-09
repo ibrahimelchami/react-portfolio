@@ -45,7 +45,7 @@ const Home = () => {
               fontSize: '16px',
             }}
           >
-            (This portfolio was built with&nbsp;
+            ( This portfolio was built with&nbsp;
             <span
               style={{
                 fontSize: '32px',
@@ -54,7 +54,7 @@ const Home = () => {
             >
               &#x269b;
             </span>
-            React)
+            React )
           </p>
         </div>
       </HContainer>
