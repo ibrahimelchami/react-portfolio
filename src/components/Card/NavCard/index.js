@@ -1,3 +1,5 @@
+import Navbar from '../../SimpleNav';
+
 import {
   Card,
   Title,
@@ -12,7 +14,16 @@ import {
 import PrimaryButton from '../../Button';
 import { NavLink as Link } from 'react-router-dom';
 
-const NavCard = ({ title, content, image, label, count, btntxt, link }) => {
+const NavCard = ({
+  title,
+  content,
+  image,
+  label,
+  count,
+  btntxt,
+  link,
+  btnstate,
+}) => {
   return (
     <Card>
       <Columnize>
@@ -27,7 +38,7 @@ const NavCard = ({ title, content, image, label, count, btntxt, link }) => {
         <Content>{content}</Content>
         <ButtonHolder>
           <Link to={link}>
-            <PrimaryButton>{btntxt}</PrimaryButton>
+            <PrimaryButton btnstate={btnstate}>{btntxt}</PrimaryButton>
           </Link>
         </ButtonHolder>
         {/* <PrimaryButton>Go to page &gt;</PrimaryButton> */}

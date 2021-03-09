@@ -66,8 +66,8 @@ export const Image = styled.img`
 `;
 
 export const ButtonHolder = styled.div`
-  position: 'absolute';
-  bottom: '16px';
+  position: absolute;
+  bottom: 16px;
 
   @media screen and (max-width: 600px) {
     position: 'relative';

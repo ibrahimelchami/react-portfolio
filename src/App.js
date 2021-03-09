@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 // import NavBar from './components/Navbar';
 
@@ -8,10 +8,10 @@ import {
   Switch,
   Redirect,
   HashRouter,
+  useLocation,
 } from 'react-router-dom';
 
 // import Home from './pages'
-// import Navbar from './components/Navbar';
 
 import Home from './pages';
 import RisePeople from './pages/projects/risepeople';
@@ -19,11 +19,22 @@ import TheInside from './pages/projects/theinside';
 import Vanmates from './pages/projects/vanmates';
 import PageNotFound from './pages/404';
 import Design from './pages/design';
+import { Navbar } from './components/ComponentLibrary';
 
 function App() {
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <HashRouter>
-      {/* <NavBar /> */}
+      <ScrollToTop />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rise-people" component={RisePeople} />
