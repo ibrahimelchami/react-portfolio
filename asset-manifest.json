@@ -1,24 +1,29 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f81d9599.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.b223bace.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.b223bace.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.d4dec835.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.d4dec835.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.a1296850.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.a1296850.js.map",
-    "static/js/2.49a39752.chunk.js": "/react-portfolio/static/js/2.49a39752.chunk.js",
-    "static/js/2.49a39752.chunk.js.map": "/react-portfolio/static/js/2.49a39752.chunk.js.map",
+    "static/js/2.6d44bd37.chunk.js": "/react-portfolio/static/js/2.6d44bd37.chunk.js",
+    "static/js/2.6d44bd37.chunk.js.map": "/react-portfolio/static/js/2.6d44bd37.chunk.js.map",
     "static/js/3.dd2e6417.chunk.js": "/react-portfolio/static/js/3.dd2e6417.chunk.js",
     "static/js/3.dd2e6417.chunk.js.map": "/react-portfolio/static/js/3.dd2e6417.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.f81d9599.chunk.css.map": "/react-portfolio/static/css/main.f81d9599.chunk.css.map",
-    "static/js/2.49a39752.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.49a39752.chunk.js.LICENSE.txt",
+    "static/js/2.6d44bd37.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.6d44bd37.chunk.js.LICENSE.txt",
+    "static/media/OpenSans-Regular.1b0809d5.ttf": "/react-portfolio/static/media/OpenSans-Regular.1b0809d5.ttf",
+    "static/media/OpenSans-SemiBold.a16d8201.ttf": "/react-portfolio/static/media/OpenSans-SemiBold.a16d8201.ttf",
+    "static/media/SourceSerifPro-Black.bf6aa8bd.ttf": "/react-portfolio/static/media/SourceSerifPro-Black.bf6aa8bd.ttf",
+    "static/media/SourceSerifPro-Bold.bada4fe1.ttf": "/react-portfolio/static/media/SourceSerifPro-Bold.bada4fe1.ttf",
+    "static/media/SourceSerifPro-SemiBold.b27cb117.ttf": "/react-portfolio/static/media/SourceSerifPro-SemiBold.b27cb117.ttf",
     "static/media/inside-old.ebcfa2e8.png": "/react-portfolio/static/media/inside-old.ebcfa2e8.png",
     "static/media/sample.6bdfee7c.png": "/react-portfolio/static/media/sample.6bdfee7c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a1296850.js",
-    "static/js/2.49a39752.chunk.js",
+    "static/js/2.6d44bd37.chunk.js",
     "static/css/main.f81d9599.chunk.css",
-    "static/js/main.b223bace.chunk.js"
+    "static/js/main.d4dec835.chunk.js"
   ]
 }
