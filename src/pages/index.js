@@ -58,40 +58,40 @@ const Home = () => {
           </p>
         </div>
       </HContainer>
-      <Content bgcolor={'#FCF7DE'}>
-        <CContainer>
-          <NavCard
-            title={Data.theinside.title}
-            content={Data.theinside.summary}
-            image={risepeopleimg}
-            label={Data.theinside.label}
-            count={Data.theinside.count}
-            btntxt={'Check it out >'}
-            btnstate={'active'}
-            link={'/the-inside'}
-          ></NavCard>
-          <NavCard
-            title={Data.risepeople.title}
-            content={Data.risepeople.summary}
-            image={risepeopleimg}
-            label={Data.risepeople.label}
-            count={Data.risepeople.count}
-            btntxt={'Under Construction'}
-            btnstate={0}
-            link={''}
-          ></NavCard>
-          <NavCard
-            title={Data.vanmates.title}
-            content={Data.vanmates.summary}
-            image={risepeopleimg}
-            label={Data.vanmates.label}
-            count={Data.vanmates.count}
-            btntxt={'Under Construction'}
-            btnstate={0}
-            link={''}
-          ></NavCard>
-        </CContainer>
-      </Content>
+      {/* <Content bgcolor={'#FCF7DE'}> */}
+      <CContainer bgcolor={'#FCF7DE'}>
+        <NavCard
+          title={Data.theinside.title}
+          content={Data.theinside.summary}
+          image={risepeopleimg}
+          label={Data.theinside.label}
+          count={Data.theinside.count}
+          btntxt={'Check it out >'}
+          btnstate={'active'}
+          link={'/the-inside'}
+        ></NavCard>
+        <NavCard
+          title={Data.risepeople.title}
+          content={Data.risepeople.summary}
+          image={risepeopleimg}
+          label={Data.risepeople.label}
+          count={Data.risepeople.count}
+          btntxt={'Under Construction'}
+          btnstate={0}
+          link={''}
+        ></NavCard>
+        <NavCard
+          title={Data.vanmates.title}
+          content={Data.vanmates.summary}
+          image={risepeopleimg}
+          label={Data.vanmates.label}
+          count={Data.vanmates.count}
+          btntxt={'Under Construction'}
+          btnstate={0}
+          link={''}
+        ></NavCard>
+      </CContainer>
+      {/* </Content> */}
     </div>
   );
 };

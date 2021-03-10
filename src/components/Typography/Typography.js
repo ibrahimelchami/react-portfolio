@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { CoContainer } from '../ComponentLibrary';
 
 export const SiteHeading = styled.h1`
-  font-family: 'Source Serif Pro';
+  font-family: 'Source Serif Pro Black';
   text-align: center;
   font-size: 88px;
   line-height: 96px;
@@ -17,7 +16,7 @@ export const SiteHeading = styled.h1`
 `;
 
 export const SiteSubheading = styled.h2`
-  font-family: 'Open Sans';
+  font-family: 'Open Sans SemiBold';
   text-align: center;
   font-weight: 600;
   font-size: 40px;
@@ -32,7 +31,7 @@ export const SiteSubheading = styled.h2`
 `;
 
 export const PageHeading = styled.h1`
-  font-family: 'Source Serif Pro';
+  font-family: 'Source Serif Pro Black';
   text-align: center;
   font-size: 88px;
   line-height: 96px;
@@ -49,7 +48,6 @@ export const PageHeading = styled.h1`
 export const PageSubHeading = styled.h2`
   font-family: 'Open Sans';
   text-align: center;
-  font-weight: 400;
   font-size: 32px;
   line-height: 48px;
   color: #283038;
@@ -65,9 +63,8 @@ export const PageSubHeading = styled.h2`
 `;
 
 export const SectionHeading = styled.h1`
-  font-family: 'Source Serif Pro';
+  font-family: 'Source Serif Pro SemiBold';
   text-align: left;
-  font-weight: 600;
   font-size: 40px;
   line-height: 56px;
   color: #283038;
@@ -82,9 +79,8 @@ export const SectionHeading = styled.h1`
 `;
 
 export const ParagraphHeading = styled.h2`
-  font-family: 'Source Serif Pro';
+  font-family: 'Source Serif Pro Bold';
   text-align: left;
-  font-weight: 700;
   font-size: 32px;
   line-height: 40px;
   color: #283038;
@@ -101,7 +97,6 @@ export const ParagraphHeading = styled.h2`
 export const Paragraph = styled.p`
   font-family: 'Open Sans';
   text-align: left;
-  font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   color: #283038;

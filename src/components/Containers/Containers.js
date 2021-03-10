@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  width: 60vw;
-  margin: auto;
-  @media screen and (max-width: 900px) {
-    width: 80vw;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 90vw;
+  background: ${(props) => props.backgroundcolor};
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 720px) {
+    padding: 80px 0;
   }
 `;
 

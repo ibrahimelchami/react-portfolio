@@ -5,7 +5,11 @@ export const Card = styled.div`
   justify-content: center;
   margin-top: 48px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
+    padding: 0 5vw;
+  }
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -29,12 +33,16 @@ export const Content = styled.p`
   line-height: 28px;
   margin: 0 0 24px 0;
   max-width: 400px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: unset;
+  }
 `;
 
 export const Columnize = styled.div`
   display: flex;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 720px) {
     flex-direction: column;
   }
 `;
@@ -51,7 +59,7 @@ export const ImageContainer = styled.div`
   max-width: 400px;
   padding: 0 24px 0 16px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     max-width: unset;
     padding: 0 0 16px 0;

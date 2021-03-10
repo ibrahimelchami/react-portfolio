@@ -8,8 +8,8 @@ import {
   QuoteStyling,
 } from './Containers';
 
-export const CContainer = ({ children }) => {
-  return <CardContainer>{children}</CardContainer>;
+export const CContainer = ({ bgcolor, children }) => {
+  return <CardContainer backgroundcolor={bgcolor}>{children}</CardContainer>;
 };
 
 export const HContainer = ({ children }) => {

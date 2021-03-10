@@ -11,6 +11,8 @@ import {
   useLocation,
 } from 'react-router-dom';
 
+import GlobalFonts from './Data/Assets/Fonts';
+
 // import Home from './pages'
 
 import Home from './pages';
@@ -34,6 +36,7 @@ function App() {
 
   return (
     <HashRouter>
+      <GlobalFonts />
       <ScrollToTop />
       <Switch>
         <Route exact path="/" component={Home} />
