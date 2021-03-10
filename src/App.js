@@ -11,7 +11,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 
-import GlobalFonts from './Data/Assets/Fonts';
+import GlobalFonts from './Data/Assets/Fonts/fonts';
 
 // import Home from './pages'
 

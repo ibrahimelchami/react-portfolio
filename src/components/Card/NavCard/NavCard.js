@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Card = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-bottom: 120px;
 
   @media screen and (max-width: 900px) {
     padding: 0 5vw;

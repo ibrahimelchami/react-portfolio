@@ -42,6 +42,7 @@ export const PageHeading = styled.h1`
   @media screen and (max-width: 600px) {
     font-size: 56px;
     line-height: 64px;
+    margin: 0;
   }
 `;
 
@@ -58,7 +59,7 @@ export const PageSubHeading = styled.h2`
   @media screen and (max-width: 600px) {
     font-size: 18px;
     line-height: 24px;
-    padding: 16px;
+    padding: 0 16px 16px 16px;
   }
 `;
 
@@ -73,7 +74,7 @@ export const SectionHeading = styled.h1`
   padding: 0 16px;
 
   @media screen and (max-width: 600px) {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 40px;
   }
 `;
@@ -90,7 +91,7 @@ export const ParagraphHeading = styled.h2`
 
   @media screen and (max-width: 600px) {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 32px;
   }
 `;
 
@@ -114,7 +115,7 @@ export const ListStyle = styled.div`
   font-family: 'Open Sans';
   color: #283038;
   ul {
-    margin: 16px 0 32px 0;
+    margin: 16px 16px 32px 16px;
     font-size: 20px;
     line-height: 32px;
     list-style-type: decimal-leading-zero;
@@ -126,6 +127,7 @@ export const ListStyle = styled.div`
   }
 
   li {
+    padding-left: 16px;
     margin: 0 0 16px 0;
   }
 `;

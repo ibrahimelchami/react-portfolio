@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 720px) {
-    padding: 80px 0;
+    padding: 120px 0 0 0;
   }
 `;
 
